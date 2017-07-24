@@ -38,5 +38,5 @@ Route::middleware('auth:api')->group(function () {
 
 	// Devuelve los datos pokemon del ID buscado y un error al no encontrarlo
 	// Parámetros: pokemon_id => Id del pokemon buscado
-	Route::post('/pokemon/buscar', 'HomeController@pokemon');
+	Route::post('/pokemon/buscar', 'HomeController@pokemon_buscar');
 });
