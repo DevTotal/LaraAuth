@@ -18,6 +18,11 @@ class HomeController extends Controller
         $this->middleware('auth');
     }
 
+    public function index(Request $request)
+    {
+        return view('home');
+    }
+
     public function user(Request $request)
     {
         return $request->user();
